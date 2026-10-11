@@ -1,0 +1,47 @@
+<section class="analysis-section ranking-section" id="regional-ranking" aria-labelledby="ranking-title">
+  <div class="section-heading"><div><p class="eyebrow">지역별 비교</p><h2 id="ranking-title">지방소멸위험지수 순위</h2></div><a class="section-link" href="#comparison-report">비교 리포트 읽기 ↓</a></div>
+  <p class="section-description">지수가 <strong>낮을수록 소멸 위험이 높습니다.</strong> 오름차순은 위험이 높은 지역부터, 내림차순은 위험이 낮은 지역부터 보여줍니다.</p>
+  <div class="ranking-controls">
+    <label>도시<select id="rank-city"><option value="">두 도시 전체</option><option>부천시</option><option>포항시</option></select></label>
+    <label>정렬<select id="rank-order"><option value="asc">지수 오름차순 · 위험 높은 순</option><option value="desc">지수 내림차순 · 위험 낮은 순</option></select></label>
+    <label class="search-label">지역명 검색<input id="rank-search" type="search" placeholder="예: 심곡, 중1동, 죽장면" autocomplete="off"></label>
+  </div>
+  <div class="ranking-extremes" id="ranking-extremes"></div>
+  <p class="ranking-caption" id="ranking-caption" role="status" aria-live="polite"></p>
+  <div class="ranking-scroll" role="region" aria-label="지역별 순위표. 표 안에서 스크롤하여 모든 지역을 확인할 수 있습니다." tabindex="0">
+    <table class="ranking-table"><caption class="sr-only">부천시·포항시 읍면동별 지방소멸위험지수와 산출 인구</caption><thead><tr><th scope="col">순위</th><th scope="col">도시</th><th scope="col">구</th><th scope="col">읍면동</th><th scope="col" id="rank-index-heading" aria-sort="ascending"><button id="rank-toggle" type="button">지수 ↑</button></th><th scope="col">위험 단계</th><th scope="col" class="numeric">20~39세 여성(명)</th><th scope="col" class="numeric">65세 이상 전체(명)</th><th scope="col">지도</th></tr></thead><tbody id="ranking-body"></tbody></table>
+  </div>
+  <p class="ranking-note">순위는 선택한 도시·검색 결과 안에서 계산합니다. 동률은 공동 순위입니다. 지수는 소수점 넷째 자리까지 표시하며, 정렬·등급 판정에는 반올림 전 값을 사용합니다. 시·구 합계는 읍면동 순위에 포함하지 않습니다.</p>
+</section>
+<article class="analysis-section report-section" id="comparison-report" aria-labelledby="report-title">
+  <div class="section-heading"><div><p class="eyebrow">도시의 재생과 활성화 · 비교 리포트</p><h2 id="report-title">도시의 성장 과정과 현재의 인구구조</h2></div><span class="report-date">2026년 9월 인구 기준</span></div>
+  <p class="report-lead">부천의 원도심과 신시가지, 포항의 동 지역과 읍·면 지역을 비교하면 도시 내부에서도 지방소멸 위험의 양상이 다르게 나타난다. 지도를 도시의 성장 과정과 함께 읽고, 지역별 수치를 통해 그 차이를 확인한다.</p>
+  <div class="report-block"><span class="report-number">01</span><div><h3>부천: 철도 중심의 원도심과 계획적으로 확장된 신시가지</h3>
+    <p>부천은 서울과 인천 사이의 경인지역에서 철도와 산업 발달을 바탕으로 성장했다. 1899년 경인선 개통 당시 설치된 소사역은 현재의 부천역으로, 역 주변은 부천 원도심의 형성 배경이 된다. 여기서 말하는 옛 소사역은 현재의 소사역과 구분해야 한다. <a href="https://www.bucheon.go.kr/site/homepage/menu/viewMenu?menuid=148009004007002" target="_blank" rel="noopener">[1]</a> <a href="https://www.kctg.or.kr/tour/touristSiteView.do?tourist_cd=TOURIST_ID00011281" target="_blank" rel="noopener">[2]</a></p>
+    <p>이러한 성장 배경을 지닌 심곡 일대를 현재의 행정동 단위로 살펴보면, 심곡3동은 <strong>0.4605</strong>, 심곡본동은 <strong>0.3751</strong>, 심곡본1동은 <strong>0.3590</strong>으로 모두 소멸위험 진입 단계에 해당한다. 그러나 심곡1동(<strong>0.5199</strong>)과 심곡2동(<strong>0.8066</strong>)은 주의 단계다. 따라서 심곡 일대 전체를 동일한 위험 수준으로 해석하기보다 원도심 내부의 차이를 함께 살펴보아야 한다.</p>
+    <p>1980년대 후반 추진된 1기 신도시 계획에 따라 중동이 개발되었고, 이후 상동 택지개발은 1994년 12월 시작해 2003년 완공되었다. 중동과 상동은 서로 이어지는 신시가지이지만 개발 시기와 사업은 구분된다. <a href="https://wonmi.bucheon.go.kr/site/homepage/menu/viewMenu?menuid=170001002004" target="_blank" rel="noopener">[3]</a> 이번 자료에서 중1동(<strong>1.0801</strong>)과 상2동(<strong>1.0336</strong>)은 보통 단계로, 65세 이상 인구보다 20~39세 여성 인구가 많다.</p>
+    <p>이 차이는 도시의 성장 과정과 주거지별 인구구성을 함께 분석할 필요성을 보여준다. 다만 신시가지라고 모두 보통 단계는 아니다. 중2동·중3동·중4동은 주의 단계이며 상동은 소멸위험 진입 단계다. 개발 시기만으로 지수 차이의 원인을 단정할 수는 없다.</p>
+  </div></div>
+  <div class="report-block"><span class="report-number">02</span><div><h3>포항: 읍·면의 고위험과 동 지역의 차이</h3>
+    <p>포항은 분석 대상 29개 읍면동 모두 주의 또는 소멸위험 단계에 해당한다. 이 중 소멸 고위험은 <strong>13곳</strong>, 소멸위험 진입은 <strong>10곳</strong>, 주의는 <strong>6곳</strong>이다. 지수 0.5 미만 지역은 <strong>23곳(79.3%)</strong>으로, 부천의 <strong>21곳(56.8%)</strong>보다 비중이 크다.</p>
+    <p>죽장면은 상옥출장소 인구를 합산한 지수가 <strong>0.0289</strong>로 두 도시의 분석 대상 중 가장 낮다. 기북면(<strong>0.0365</strong>)과 호미곶면(<strong>0.0422</strong>)도 매우 낮은 값을 보인다. 이러한 읍·면 지역에서는 청년층의 정주 여건과 고령 인구의 생활서비스 접근성을 함께 검토할 필요가 있다.</p>
+    <p>동 지역도 일률적이지 않다. 해도동(<strong>0.1272</strong>)과 송도동(<strong>0.1043</strong>)은 소멸 고위험이지만, 장량동(<strong>0.6846</strong>)과 대이동(<strong>0.6479</strong>)은 주의 단계다. 지도에서 읍·면의 넓은 면적이 강조될 수 있으므로 색칠된 면적과 지역 수, 거주 인구를 구분해 읽어야 한다.</p>
+  </div></div>
+  <div class="report-block"><span class="report-number">03</span><div><h3>두 도시의 비교: 도시 평균에 가려진 지역 차이</h3>
+    <div class="report-table-wrap"><table class="comparison-table"><caption>도시 전체 지수와 읍면동별 단계 분포</caption><thead><tr><th scope="col">비교 항목</th><th scope="col">부천시</th><th scope="col">포항시</th></tr></thead><tbody>
+      <tr><th scope="row">도시 전체 지수</th><td>0.5532 · 주의</td><td>0.3426 · 소멸 위험</td></tr>
+      <tr><th scope="row">분석 대상</th><td>37개 행정동</td><td>29개 읍면동</td></tr>
+      <tr><th scope="row">소멸 저위험 / 보통</th><td>0곳 / 2곳</td><td>0곳 / 0곳</td></tr>
+      <tr><th scope="row">주의</th><td>14곳</td><td>6곳</td></tr>
+      <tr><th scope="row">소멸위험 진입 / 고위험</th><td>21곳 / 0곳</td><td>10곳 / 13곳</td></tr>
+      <tr><th scope="row">지수 0.5 미만 지역 비중</th><td>56.8%</td><td>79.3%</td></tr>
+    </tbody></table></div>
+    <p>부천은 도시 전체로는 주의 단계지만 절반 이상의 행정동이 소멸위험 진입 단계다. 포항은 도시 전체가 소멸위험 진입 단계이며, 읍·면과 일부 동 지역에서 고위험이 확인된다. 도시 전체 지수와 동별 분포를 함께 보아야 지역 내부의 인구구조 차이를 파악할 수 있다. 도시 전체 지수는 각 도시의 여성 인구 합계를 고령 인구 합계로 나눈 값이며, 읍면동 지수의 단순 평균과 다르다.</p>
+  </div></div>
+  <div class="report-block"><span class="report-number">04</span><div><h3>도시재생의 시사점과 후속 분석</h3>
+    <p>부천 원도심의 재생 방향으로는 기존 교통 접근성과 상권을 활용하면서 주거환경, 청년층의 거주 여건, 고령층의 생활 편의를 함께 개선하는 방안을 검토할 수 있다. 포항은 고위험 읍·면의 교통·의료·돌봄 접근성, 청년층의 정주와 일자리, 기존 동 지역의 주거 및 상권 여건을 지역 특성에 맞게 살펴볼 필요가 있다. 이는 지도의 관찰 결과에서 도출한 검토 방향이다.</p>
+    <p>원인 분석을 위해서는 여러 해의 연령별 인구 변화, 전입·전출, 주택 노후도와 주거비, 사업체·일자리 분포, 생활서비스 접근성을 추가로 확인해야 한다. 한 시점의 지방소멸위험지수만으로 인구 유출의 원인이나 신도시 개발의 효과를 입증할 수는 없다.</p>
+  </div></div>
+  <aside class="report-method"><h3>지수의 의미와 자료 범위</h3><p>지방소멸위험지수 = 20~39세 여성 인구 ÷ 65세 이상 전체 인구. 0.2 미만은 고위험, 0.2 이상 0.5 미만은 소멸위험 진입, 0.5 이상 1.0 미만은 주의, 1.0 이상 1.5 미만은 보통, 1.5 이상은 저위험으로 분류했다. <a href="https://www.pcccr.go.kr/storage/board/base/2024/07/10/BOARD_ATTACH_1720570093760.pdf" target="_blank" rel="noopener">[4]</a> 이 지수는 특정 연령·성별 인구의 비율로, 소멸 확률이나 실제 소멸 시점을 뜻하지 않는다.</p><p>인구는 제공된 주민등록인구통계 2026년 9월 CSV, 지도 경계는 SGIS 2025년 6월 30일 자료를 사용했다. 포항의 죽장면과 상옥출장소는 여성·고령 인구를 각각 합산해 하나의 죽장면으로 산출했다. 경계와 인구의 기준 시점이 다르므로 그 사이의 경계 변경 여부는 별도로 확인할 필요가 있다.</p></aside>
+  <details class="report-sources"><summary>참고자료와 역사 설명 출처</summary><ol><li><a href="https://www.bucheon.go.kr/site/homepage/menu/viewMenu?menuid=148009004007002" target="_blank" rel="noopener">부천시청, 「시 승격 이전의 부천」</a> — 경인선과 산업화에 따른 도시 성장.</li><li><a href="https://www.kctg.or.kr/tour/touristSiteView.do?tourist_cd=TOURIST_ID00011281" target="_blank" rel="noopener">문화관광해설사 통합예약, 「부천문화둘레길 소사내음길」</a> — 1899년 소사역(현재 부천역) 설치와 원도심 형성.</li><li><a href="https://wonmi.bucheon.go.kr/site/homepage/menu/viewMenu?menuid=170001002004" target="_blank" rel="noopener">원미구청, 「원미구의 역사」</a> — 중동신도시와 상동 택지개발.</li><li><a href="https://www.pcccr.go.kr/storage/board/base/2024/07/10/BOARD_ATTACH_1720570093760.pdf" target="_blank" rel="noopener">대통령직속 지방시대위원회 자료</a> — 지방소멸위험지수 산식과 분류 기준(한국고용정보원 원시자료 인용).</li></ol></details>
+</article>
